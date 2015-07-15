@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="PAYMENT"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/mainColor"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="#ccc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:text="THURSDAY, DECEMBER 11\n11:30 AM - HOURS"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:text="$81"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="68"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:src="@drawable/visa"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/visaID"
+                android:layout_weight="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/dateID"
+                android:layout_weight="50"
+                android:text="MM/YY"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/cvcID"
+                android:layout_weight="50"
+                android:text="CVC"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:src="@drawable/lock"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/promotionID"
+                android:layout_weight="20"
+                android:text="Promotion code (optional)"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:src="@drawable/apply"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="Complete Booking"
+            android:id="@+id/booking"
+            android:background="@color/mainColor" />
+
+    </LinearLayout>
+
+</LinearLayout>
